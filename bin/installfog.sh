@@ -534,6 +534,7 @@ while [[ -z $blGo ]]; do
                             echo -n " * Please enter a valid directory for your storage location (/images) "
                             read storageLocation
                             [[ -z $storageLocation ]] && storageLocation="/images"
+							touch .mntcheck storageLocation="/images"
                         done
                         ;;
                 esac
